@@ -1,29 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         <style>
             body {
-              background: url('https://github.com/Arkon-Inc/NovaScanda/blob/main/Assets/Provinces-modified.jpg?raw=true');
-              background-size: cover;
+                background: url('https://github.com/Arkon-Inc/NovaScanda/blob/main/Assets/Provinces-modified.jpg?raw=true'); 
+                background-size: cover;
             }
 
             #StockBox {
-                background-color:darkcyan;
-                height: 750px;
-                width: 750px;
+                background-color:whitesmoke;
+                height: 450px;
+                width: 550px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 margin-right: -50%;
                 transform: translate(-50%, -50%);
-                opacity: 0.85;
-                border: 5px solid cyan;
+                opacity: 0.9;
+                border: 5px solid white;
+            }
+
+            #Title {
+                position: absolute;
+                top: 12.5%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                font-size:50px;
+            }
+
+            #uname {
+                position: absolute;
+                top: 42.5%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                height: 50px;
+                width: 280px;
+                padding-left: 70px;
+                background: url("https://github.com/Arkon-Inc/NovaScanda/blob/main/Assets/Profile-Icon.png?raw=true") no-repeat 7px;
+                background-size: 40px;
+            }
+
+            #passw {
+                position: absolute;
+                top: 57.5%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                height: 50px;
+                width: 280px;
+                padding-left: 70px;
+                background: url("https://github.com/Arkon-Inc/NovaScanda/blob/main/Assets/Password-Icon.png?raw=true") no-repeat 7px;
+                background-size: 40px;
+            }
+
+            #forgorPass {
+                color: grey;
+                position: absolute;
+                top: 64.5%;
+                left: 72%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 15px;
+            }
+
+            #subBtn {
+                position: absolute;
+                top: 77.5%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                height: 50px;
+                width: 350px;
+                background-color:deeppink;
+                color: white;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 20px;
+                border:0px;
             }
         </style>
     </head>
     <body>
         <div id="StockBox">
-            
+            <h1 id="Title">Bank of Nova Scanda</h1>
+            <input type="text" id="uname" value placeholder="John Doe">
+            <br>
+            <input type="text" id="passw" value placeholder="ILoveArkon123">
+            <p id="forgorPass">Forgot password?</p>
+            <input type="submit" id="subBtn" value="Login">
         </div>
     </body>
 </html>
